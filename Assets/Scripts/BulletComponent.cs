@@ -7,7 +7,7 @@ namespace GensokyoInvaders
     public class BulletComponent : MonoBehaviour
     {
         public Vector3 Velocity;
-        public float Damage = 1.0f;
+        public int Damage = 1;
         public string TargetTag = "Enemy";
 
         // Start is called before the first frame update

@@ -32,6 +32,8 @@ namespace GensokyoInvaders
         private int CurrentKills = 0;
         private int CurrentAggression = 1;
 
+        private Score playerScore;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -41,6 +43,7 @@ namespace GensokyoInvaders
                 GenerateEnemyPattern();
             }
 
+            playerScore = FindObjectOfType<Score>();
         }
 
         // Update is called once per frame
@@ -95,6 +98,7 @@ namespace GensokyoInvaders
 
         void OnEnemyDestroyed(GameObject gameObject)
         {
+            playerScore.AddScore(gameObject.GetComponent<BasicEnemyBehaviour>().Score);
             Enemies.Remove(gameObject.GetComponent<BasicEnemyBehaviour>());
             Destroy(gameObject);
 

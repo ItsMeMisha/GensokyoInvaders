@@ -14,6 +14,7 @@ namespace GensokyoInvaders {
         public float ShootingDelay = 4.0f;
         public float ShootProbability = 0.5f;
 
+        public int Score;
         public int AggressionLevel
         {
             get { return _AggressionLevel; }
