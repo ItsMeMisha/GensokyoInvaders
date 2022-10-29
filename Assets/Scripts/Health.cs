@@ -24,12 +24,6 @@ namespace GensokyoInvaders
         {
             CurrentHP = MaxHP;
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-        }
-
         public void TakeDamage(int damage)
         {
             CurrentHP -= damage;

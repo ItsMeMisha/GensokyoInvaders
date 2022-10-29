@@ -16,11 +16,5 @@ namespace GensokyoInvaders
             _text.text = string.Format("Health {0}", _playerHealth.MaxHP);
             _playerHealth.OnChangeHealth += () => { _text.text = string.Format("Health {0}", _playerHealth.CurrentHP); };
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }

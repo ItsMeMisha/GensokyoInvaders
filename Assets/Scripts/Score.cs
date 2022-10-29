@@ -19,13 +19,6 @@ namespace GensokyoInvaders
         {
             CurScore = 0;
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public void AddScore(int ScoreToAdd)
         {
             CurScore += ScoreToAdd;

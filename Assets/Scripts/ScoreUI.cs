@@ -15,11 +15,5 @@ namespace GensokyoInvaders
             _playerScore = FindObjectOfType<PlayerControls>().GetComponent<Score>();
             _playerScore.OnChangeScore += () => { _text.text = string.Format("Score {0}", _playerScore.CurScore); };
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }

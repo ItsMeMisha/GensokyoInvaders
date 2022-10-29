@@ -12,11 +12,6 @@ namespace GensokyoInvaders
         public Vector3 RelativeSpawnpoint = Vector2.zero;
         public Vector3 ShootDirection = new Vector3(0.0f, 1.0f, 0.0f);
         public float BulletSpeed = 15.0f;
-        // Use this for initialization
-        void Start()
-        {
-
-        }
 
         // Update is called once per frame
         void Update()

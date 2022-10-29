@@ -10,17 +10,6 @@ namespace GensokyoInvaders
         public BasicEnemyBehaviour FairyType;
         public BasicEnemyBehaviour OrbType;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public override List<BasicEnemyBehaviour> GeneratePattern()
         {
             var enemies = new List<BasicEnemyBehaviour>();
