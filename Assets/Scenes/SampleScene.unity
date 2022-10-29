@@ -786,8 +786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25fde7eaaa9cec44af21f4590763160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.3
-  Slowdown: 0.5
+  Speed: 0.2
+  Slowdown: 0.3
 --- !u!50 &1179861874
 Rigidbody2D:
   serializedVersion: 4
@@ -804,7 +804,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cb82e1d3f9dde624189da91af05571ea, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -818,7 +818,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1179861868}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cb82e1d3f9dde624189da91af05571ea, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

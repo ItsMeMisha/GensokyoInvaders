@@ -134,7 +134,8 @@ namespace GensokyoInvaders
             var UFOHealth = UFOObject.GetComponent<Health>();
             if (UFOHealth != null)
             {
-                UFOHealth.OnDestroy += (GameObject go) => { 
+                UFOHealth.OnDestroy += (GameObject go) => {
+                    playerScore.AddScore(UFOObject.GetComponent<BasicEnemyBehaviour>().Score);
                     Destroy(go);
                     UFOSpawned = false;
                 };
