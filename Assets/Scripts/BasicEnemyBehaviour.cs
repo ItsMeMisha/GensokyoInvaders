@@ -50,7 +50,7 @@ namespace GensokyoInvaders {
             
             if (shooter != null)
             {
-                Invoke("Shoot", ShootingDelay);
+                Invoke("Shoot", ShootingDelay + Random.Range(0.0f, ShootingDelay));
             }
 
 
