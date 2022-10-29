@@ -10,9 +10,9 @@ namespace GensokyoInvaders
         public BasicEnemyBehaviour FairyType;
         public BasicEnemyBehaviour OrbType;
 
-        public override List<BasicEnemyBehaviour> GeneratePattern()
-        {
+        public override List<BasicEnemyBehaviour> GeneratePattern() { 
             var enemies = new List<BasicEnemyBehaviour>();
+        
             float curY = yLow;
             //Two rows of ghosts
             for (int j = 0; j < 2; j++)

@@ -16,7 +16,7 @@ namespace GensokyoInvaders
             transform.Translate(Velocity * Time.deltaTime);
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        protected virtual void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision != null && collision.tag == TargetTag) {
                Health enemyHealth = collision.gameObject.GetComponent<Health>();
