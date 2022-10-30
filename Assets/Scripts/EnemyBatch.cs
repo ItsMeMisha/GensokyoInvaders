@@ -100,7 +100,7 @@ namespace GensokyoInvaders
         {
             playerScore.AddScore(gameObject.GetComponent<BasicEnemyBehaviour>().Score);
             Enemies.Remove(gameObject.GetComponent<BasicEnemyBehaviour>());
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             if (!UFOSpawned && Random.Range(0.0f, 1.0f) <= UFOProbability)
             {
@@ -136,7 +136,6 @@ namespace GensokyoInvaders
             {
                 UFOHealth.OnDestroy += (GameObject go) => {
                     playerScore.AddScore(UFOObject.GetComponent<BasicEnemyBehaviour>().Score);
-                    Destroy(go);
                     UFOSpawned = false;
                 };
             }

@@ -21,7 +21,7 @@ namespace GensokyoInvaders
             get { return _bulletNumber; }
 
             set 
-            { 
+            {
                 _bulletNumber = value;
                 OnBulletNumberChanged?.Invoke();
             }

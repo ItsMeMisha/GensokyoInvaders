@@ -23,6 +23,7 @@ namespace GensokyoInvaders
         void Start()
         {
             CurrentHP = MaxHP;
+            OnDestroy += (GameObject go) => { Destroy(go); };
         }
         public void TakeDamage(int damage)
         {
@@ -37,7 +38,7 @@ namespace GensokyoInvaders
         public void Heal(int healingHP)
         {
             CurrentHP += healingHP;
-            OnChangeHealth();
+            OnChangeHealth?.Invoke();
         }
     }
 }

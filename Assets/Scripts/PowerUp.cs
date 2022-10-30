@@ -25,6 +25,11 @@ namespace GensokyoInvaders
                 }
                 Destroy(gameObject);
             }
+
+            if (collision != null && collision.tag == "Bound")
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

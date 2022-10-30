@@ -20,6 +20,16 @@ namespace GensokyoInvaders
             if (health != null)
             {
                 health.OnDestroy += (GameObject go) => { GameManager.Restart(); };
+                if (shooter != null)
+                {
+                    health.OnChangeHealth += () => 
+                    { 
+                        if (shooter.BulletNumber > 1)
+                        {
+                            shooter.BulletNumber--;
+                        }
+                    };
+                }
             }
         }
 

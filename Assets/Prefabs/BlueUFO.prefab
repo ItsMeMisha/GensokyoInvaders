@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5895958475863747464}
   - component: {fileID: 5895958475863747467}
   - component: {fileID: 6996961236264943418}
+  - component: {fileID: -2082636642030287011}
   m_Layer: 0
   m_Name: BlueUFO
   m_TagString: Enemy
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f665d990d44bd7c4fb77a7f791cecdea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 3
+  MaxHP: 6
   _CurrentHP: 0
 --- !u!114 &5895958475863747467
 MonoBehaviour:
@@ -176,3 +177,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2082636642030287011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895958475863747510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d402f72a7584a0640902128cbe02af68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpItem: {fileID: 520159432820170271, guid: 13cda7c7fe091d14a9a459586673ca17, type: 3}
